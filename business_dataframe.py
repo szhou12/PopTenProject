@@ -2,31 +2,37 @@ import pandas as pd
 import pickle
 import csv
 
-def dict_assemble(save_format):
+def dict_assemble(save_format, constraint = False):
     businesses_df = pd.read_json('business.json', lines = True, encoding = "utf-8")
 
     iterator = 0
 
     restaurant_dict = dict()
     food_dict = dict()
+    city_set = set()
 
     for row in businesses_df.itertuples():
         if row.is_open == 1 and 'Restaurants' in row.categories:
-            iterator += 1
             business_name = row.name
             address = row.address
             city = row.city
+            state = row.state
+            if constraint != False:
+                if state != constraint:
+                    continue
+            city_set.add(city)
             stars = row.stars
             categories = row.categories
             latitude = row.latitude
             longitude = row.longitude
+            iterator += 1
             UID = iterator
             for cuisine in categories:
                if cuisine in food_dict:
                    food_dict[cuisine].append(UID)
                else:
                    food_dict[cuisine] = [UID]
-            restaurant_dict[UID] = [business_name, address, city, stars, (longitude, latitude)]
+            restaurant_dict[UID] = [business_name, address, city, state, stars, (longitude, latitude)]
             print(UID)
     if save_format == 'csv':
         restaurant_headers = restaurant_dict.keys()
@@ -44,6 +50,8 @@ def dict_assemble(save_format):
             pickle.dump(restaurant_dict, f)
         with open('food.pickle', 'wb') as g:
             pickle.dump(food_dict, g)
+    with open("Cities.txt", "w") as h:
+        h.write(str(city_set))
         
     return "Finished"
 
