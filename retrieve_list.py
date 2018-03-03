@@ -60,11 +60,14 @@ def find_list(strings):
         keys = list(category_dict.keys())
         maximum = keys[value_length.index(max(value_length))]
         if category_dict[maximum] != category_dict[str(categories_cleaned)]:
-            next_best = maximum
+            next_best = maximum[1:-1]
             next_best_string = "We also found " + str(len(category_dict[maximum])) + " results for " + next_best
 
+    output_dict = {}
+    for dictionary in category_dict[str(categories_cleaned)]:
+        output_dict.update(dictionary)
             
-    return category_dict[str(categories_cleaned)], next_best_string, exception_string
+    return output_dict, list(output_dict.keys()), next_best_string, exception_string
 
 def get_categories():
     with open('food.pickle', 'rb') as f:

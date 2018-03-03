@@ -32,7 +32,7 @@ def dict_assemble(save_format, constraint = False):
                    food_dict[cuisine].append(UID)
                else:
                    food_dict[cuisine] = [UID]
-            restaurant_dict[UID] = [business_name, address, city, state, stars, (longitude, latitude)]
+            restaurant_dict[UID] = {business_name: [address, city, state, stars, (longitude, latitude)]}
             print(UID)
     if save_format == 'csv':
         restaurant_headers = restaurant_dict.keys()
