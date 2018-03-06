@@ -16,28 +16,31 @@ def find_list(strings):
 
     exception_string = ''
     categories_cleaned = []
-    
-    for a_category in categories:
-        try:
-            UID_list = food_dict[a_category]
-        except KeyError:
-            if exception_string == '':
-                exception_string = "We could not find restauraunts matching"
-            else:
-                exception_string = exception_string + ","
-            exception_string = exception_string + " " + a_category
-            continue
-        categories_cleaned.append(a_category)
+    if len(strings) > 0:
+        for a_category in categories:
+            try:
+                UID_list = food_dict[a_category]
+            except KeyError:
+                if exception_string == '':
+                    exception_string = "We could not find restauraunts matching"
+                else:
+                    exception_string = exception_string + ","
+                exception_string = exception_string + " " + a_category
+                continue
+            categories_cleaned.append(a_category)
 
-    category_combinations = []
-    if len(categories_cleaned) == 2:
-        category_combinations += ([list(y) for y in combinations(categories_cleaned, 1)])
-        category_combinations += [categories_cleaned]
-    elif len(categories_cleaned) > 2:
-        for x in range (2, len(categories_cleaned) + 1):
-            category_combinations += ([list(y) for y in combinations(categories_cleaned, x)])
+        category_combinations = []
+        if len(categories_cleaned) == 2:
+            category_combinations += ([list(y) for y in combinations(categories_cleaned, 1)])
+            category_combinations += [categories_cleaned]
+        elif len(categories_cleaned) > 2:
+            for x in range (2, len(categories_cleaned) + 1):
+                category_combinations += ([list(y) for y in combinations(categories_cleaned, x)])
+        else:
+            category_combinations = [categories_cleaned]
     else:
-        category_combinations = [categories_cleaned]
+        return restauraunt_dict, list(restauraunt_dict.keys()), "", ""
+
 
     category_dict = dict()
     for a_list in category_combinations:
