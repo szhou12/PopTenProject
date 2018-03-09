@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+table {
+    width:100%;
+    height:120%;
+}
+table, th, td {
+    border: 0.1px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h1> Here come the Popten Restaurants!</h1>
+
+                        <table>
+
+                            <tr>
+                                <th>Restaurants</th>
+                                <th>Tweets</th>
+
+
+                            </tr>
+
+                            <tr>
+                                <td>{{Restaurant1}}</td>
+                                <td>{{ Tweet1 }}</td>
+                            </tr>
+
+                            <tr>
+                              <td>{{Restaurant2}}</td>
+                              <td>{{ Tweet2 }}</td>
+                            </tr>
+
+                            <tr>
+                              <td>{{Restaurant3}}</td>
+                              <td>{{ Tweet3 }}</td>
+                            </tr>
+
+                            <tr>
+                              <td>{{Restaurant4}}</td>
+                              <td>{{ Tweet4 }}</td>
+                            </tr>
+                            <tr>
+                              <td>{{Restaurant5}}</td>
+                              <td>{{ Tweet5 }}</td>
+                            </tr>
+                            <tr>
+                              <td>{{Restaurant6}}</td>
+                              <td>{{ Tweet6 }}</td>
+                            </tr>
+                            <tr>
+                              <td>{{Restaurant7}}</td>
+                              <td>{{ Tweet7 }}</td>
+                            </tr>
+                            <tr>
+                              <td>{{Restaurant8}}</td>
+                              <td>{{ Tweet8 }}</td>
+                            </tr>
+                            <tr>
+                              <td>{{Restaurant9}}</td>
+                              <td>{{ Tweet9 }}</td>
+                            </tr>
+                            <tr>
+                              <td>{{Restaurant10}}</td>
+                              <td>{{ Tweet10 }}</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
