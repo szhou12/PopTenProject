@@ -1,0 +1,413 @@
+{% extends 'index.html' %}
+
+{% block table %}
+
+
+<header>
+
+
+<!-- Cirlce Starts -->
+<div id="menu"  class="container spacer about">
+<h2 class="text-center wowload fadeInUp">Trending List</h2>
+  <div class="row">
+    
+  <div class="col-sm-6 wowload fadeInLeft">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <!-- rank1 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 <i class="fa fa-coffee"></i> 1. {{Restaurant1}}
+                </a>
+              </h4>
+          </div>
+
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore1}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore1}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address1}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet1}}</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rank2 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               <i class="fa fa-fire"></i> 2. {{Restaurant2}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore2}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore2}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address2}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet2}}</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rank3 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+               <i class="fa fa-beer"></i> 3. {{Restaurant3}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore3}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore3}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address3}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet3}}</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rank4 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+               <i class="fa fa-spoon"></i> 4. {{Restaurant4}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore4}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore4}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address4}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet4}}</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rank5 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+               <i class="fa fa-birthday-cake"></i> 5. {{Restaurant5}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore5}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore5}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address5}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet5}}</div></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </div> <!--Left-->
+
+  <div class="col-sm-6 wowload fadeInRight">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <!-- rank6 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+               <i class="fa fa-coffee"></i> 6. {{Restaurant6}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore6}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore6}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address6}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet6}}</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rank7 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+               <i class="fa fa-fire"></i> 7. {{Restaurant7}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore7}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore7}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address7}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet7}}</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rank8 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+               <i class="fa fa-beer"></i> 8. {{Restaurant8}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseEight" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore8}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore8}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address8}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet8}}</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rank9 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+               <i class="fa fa-spoon"></i> 9. {{Restaurant9}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseNine" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore9}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore9}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address9}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet9}}</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rank10 -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+               <i class="fa fa-birthday-cake"></i> 10. {{Restaurant10}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTen" class="panel-collapse collapse" role="tabpanel">
+            <div class="panel-body">
+              <div class="clearfix food-list"><div class="pull-left">Twitter Score</div><span class="pull-right">{{tscore10}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Yelp Score</div><span class="pull-right">{{yscore10}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">Address</div><span class="pull-right">{{Address10}}</span></div>
+              <div class="clearfix food-list"><div class="pull-left">{{Tweet10}}</div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  </div> <!--Right-->
+
+  </div>
+
+</div>
+</header>
+<!-- #Cirlce Ends -->
+{% endblock %}
+
+
+
+
+
+<!--  DIVISION  -->
+
+
+
+
+
+
+
+{% block content2 %}
+<!-- Map Starts-->
+
+
+<style>
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#map p{margin: 0 !important;}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+  width:100%;
+  height:10%;
+}
+#warnings-panel {
+  width: 100%;
+  height:5%;
+  text-align: center;
+}
+
+</style>
+    <br><br>
+    <h2 class="text-center wowload fadeInUp" id = "center" value ="{{OriginCoords}}">Map</h2>
+    <div class="text-center wowload fadeInUp">
+    <!--<div style="width: 100%; height: 50px;">-->
+    <!--<div id="floating-panel">-->
+    <!--<b id = "center" value ="{{OriginCoords}}">[Route]</b>-->
+    <b>Start: </b>
+    <select id="start">
+      <option value="{{OriginAddress}}">Your Location</option>
+    </select>
+    <b>End: </b>
+    <select id="end">
+      <option value="{{Address1}}">{{Restaurant1}}</option>
+      <option value="{{Address2}}">{{Restaurant2}}</option>
+      <option value="{{Address3}}">{{Restaurant3}}</option>
+      <option value="{{Address4}}">{{Restaurant4}}</option>
+      <option value="{{Address5}}">{{Restaurant5}}</option>
+      <option value="{{Address6}}">{{Restaurant6}}</option>
+      <option value="{{Address7}}">{{Restaurant7}}</option>
+      <option value="{{Address8}}">{{Restaurant8}}</option>
+      <option value="{{Address9}}">{{Restaurant9}}</option>
+      <option value="{{Address10}}">{{Restaurant10}}</option>
+    </select>
+    <b>Mode of Travel: </b>
+    <select id="mode">
+      <option value="DRIVING">Driving</option>
+      <option value="WALKING">Walking</option>
+      <option value="BICYCLING">Bicycling</option>
+      <option value="TRANSIT">Transit</option>
+    </select>
+    </div>
+
+
+    <div id="map" style="width: 100%; height: 100%;"></div>
+    &nbsp;
+    <div id="warnings-panel"></div>
+
+<!-- #Map Ends -->
+
+
+
+    <script>
+        function initMap() {
+          var markerArray = [];
+
+          // Instantiate a directions service.
+          var directionsService = new google.maps.DirectionsService;
+
+          // Create a map and center it on Manhattan.
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            //center: {lat: 40.771, lng: -73.974}
+            center: document.getElementById('center').value
+          });
+
+          // Create a renderer for directions and bind it to the map.
+          var directionsDisplay = new google.maps.DirectionsRenderer({map: map});
+
+          // Instantiate an info window to hold step text.
+          var stepDisplay = new google.maps.InfoWindow;
+
+          // Display the route between the initial start and end selections.
+          calculateAndDisplayRoute(
+              directionsDisplay, directionsService, markerArray, stepDisplay, map);
+          // Listen to change events from the start and end lists.
+          var onChangeHandler = function() {
+            calculateAndDisplayRoute(
+                directionsDisplay, directionsService, markerArray, stepDisplay, map);
+          };
+          document.getElementById('start').addEventListener('change', onChangeHandler);
+          document.getElementById('end').addEventListener('change', onChangeHandler);
+
+          document.getElementById('mode').addEventListener('change', function() {
+            calculateAndDisplayRoute( directionsDisplay, directionsService, markerArray, stepDisplay, map);
+            });
+        }
+
+
+        function calculateAndDisplayRoute(directionsDisplay, directionsService,
+            markerArray, stepDisplay, map) {
+          // First, remove any existing markers from the map.
+          for (var i = 0; i < markerArray.length; i++) {
+            markerArray[i].setMap(null);
+          }
+
+          // Get travel mode
+          var selectedMode = document.getElementById('mode').value;
+
+          // Retrieve the start and end locations and create a DirectionsRequest using
+          // WALKING directions.
+          directionsService.route({
+            origin: document.getElementById('start').value,
+            destination: document.getElementById('end').value,
+            travelMode: google.maps.TravelMode[selectedMode]
+          }, function(response, status) {
+            // Route the directions and pass the response to a function to create
+            // markers for each step.
+            if (status === 'OK') {
+              document.getElementById('warnings-panel').innerHTML =
+                  '<b>' + response.routes[0].warnings + '</b>';
+              directionsDisplay.setDirections(response);
+              showSteps(response, markerArray, stepDisplay, map);
+            } else {
+              window.alert('Directions request failed due to ' + status);
+            }
+          });
+        }
+
+        function showSteps(directionResult, markerArray, stepDisplay, map) {
+          // For each step, place a marker, and add the text to the marker's infowindow.
+          // Also attach the marker to an array so we can keep track of it and remove it
+          // when calculating new routes.
+          var myRoute = directionResult.routes[0].legs[0];
+          for (var i = 0; i < myRoute.steps.length; i++) {
+            var marker = markerArray[i] = markerArray[i] || new google.maps.Marker;
+            marker.setMap(map);
+            marker.setPosition(myRoute.steps[i].start_location);
+            attachInstructionText(
+                stepDisplay, marker, myRoute.steps[i].instructions, map);
+          }
+        }
+
+        function attachInstructionText(stepDisplay, marker, text, map) {
+          google.maps.event.addListener(marker, 'click', function() {
+            // Open an info window when the marker is clicked on, containing the text
+            // of the step.
+            stepDisplay.setContent(text);
+            stepDisplay.open(map, marker);
+          });
+        }
+
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh5RyAWZ46CQxlnL5CjN1YWiZDk4Oyfc4&callback=initMap">
+    </script>
+
+{% endblock %}
