@@ -62,6 +62,9 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - **Step 3**: The results will be shown in a list, each with a drop-down menu and in a map
 - Note: In the map, the start is your current location, and you can choose an end in the drop-down menu. You can also choose a travel mode. Then the map will show you the route.
 
+## Code Structure
+
+
 ## Contributions and Responsibilities
 **Shuyu Zhou**
 - PopTenProject/searchres/main_algorithm.py
@@ -89,3 +92,6 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 **Andrew Deng**
 - PopTenProject/searchres/util/business_dataframe.py
 - PopTenProject/searchres/util/retrieve_list.py
+
+## Acknowledgements
+- [freemiumdownload](http://freemiumdownload.com/demo?theme=bootstrap-coffee-pizza) - The web framework used
