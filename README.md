@@ -16,7 +16,7 @@ The goal of our project is to collect data from the social media Twitter, in ord
 - django-form
 
 ### Run the project
-- Step 1: Download the whole project, keep the order of files as it is shown in here
+- Step 1: Download the whole project, keep the hierarchy of files as it is shown in here
 - Step 2: Copy and paste Yelp dataset ('business.json') and Twitter dataset (e.g. 'twitter_data12.txt') into the folder PopTenProject/searchres/util
 - Step 3: Open the terminal, change the directory to where manage.py is at
 - Step 4: Run the following command:
