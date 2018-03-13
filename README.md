@@ -1,7 +1,7 @@
 # PopTen: A CSS122 Project
 
 ## Synopsis
-The goal of our project is to collect data from the social media website Twitter, in order to interpret this information to predict the trends of restaurants within a specific location.  We foresee the creation of a website from which we will be able to provide users the ability to select from search criteria, including location and food type, and be returned information on restaurants that have been popular among twitter users in the area in order to provide useful suggestions.
+The goal of our project is to collect data from the social media Twitter, in order to interpret this information to predict the trends of restaurants within a specific location.  We foresee the creation of a website from which we will be able to provide users the ability to select from search criteria, including location and food type, and be returned information on restaurants that have been popular among twitter users in the area in order to provide useful suggestions and directions to those restaurants.
 
 ## Getting Started
 ### Run the project
@@ -28,7 +28,7 @@ python manage.py runserver
 - Django == 2.0.2
 - django-form
 
-### Contributions and Responsibility
+## Contributions and Responsibilities
 **Shuyu Zhou**
 - PopTenProject/searchres/main_algorithm.py
 - PopTenProject/searchres/util/analysis2.py
@@ -36,7 +36,7 @@ python manage.py runserver
 - PopTenProject/searchres/util/scrape_twitter.py
 - PopTenProject/searchres/templates/temp.html
 - PopTenProject/searchres/templates/noresults.html
-- PopTenProject/searchres/templates/results.html (modified)
+- PopTenProject/searchres/templates/results.html
 - PopTenProject/searchres/templates/index.html (modified)
 
 **Ke Duan**
