@@ -30,6 +30,16 @@ python manage.py runserver
 
 ### DIY: Scraping your own twitter dataset
 - Step 1: Open the terminal, change the directory to $PopTenProject/searchres/util/
+- Step 2: Check if 'scrape_twitter.py' is in the /util folder
+- Step 3: Run the following command:
+```
+python scrape_twitter.py > [twitter_data filename]
+```
+e.g. twitter_data12.txt (better save it as .txt file to avoid any conflicts that may arise)
+- Step 4: Wait for 2-3 hours to have a reasonably large dataset
+- Step 5: Check if your dataset is in /util folder
+- Step 6: If it is, change the directory to $PopTenProject/searchres/ and find main_algorithm.py
+- Step 7: Open main_algorithm.py and find 'TWEETS_PATH' and replace its assigned value wity your twitter_data filename
 
 ## Contributions and Responsibilities
 **Shuyu Zhou**
