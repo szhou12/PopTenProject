@@ -71,6 +71,35 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - /util/retrieve_list.py: same as above
 - /util/googlemap.py: Geocode a given address
 - /templates/results.html: Include a javascript that applies Google Map API to calculate directions between two locations
+**Datasets (should be) under PopTenProject/searchres/util**
+- business.json: raw Yelp dataset downloaded
+- twitter_data12.txt (or anyone you've scraped): Twitter dataset scraped
+
+## Documentation of Code Ownership
+**Original**
+- PopTenProject/searchres/main_algorithm.py
+- PopTenProject/searchres/util/analysis2.py
+- PopTenProject/searchres/util/googlemap.py
+- PopTenProject/searchres/util/scrape_twitter.py
+- PopTenProject/searchres/util/business_dataframe.py
+- PopTenProject/searchres/util/retrieve_list.py
+- PopTenProject/searchres/admin.py
+- PopTenProject/searchres/apps.py
+- PopTenProject/searchres/forms.py
+- PopTenProject/searchres/models.py
+- PopTenProject/searchres/tests.py
+- PopTenProject/searchres/views.py
+- PopTenProject/manage.py
+- PopTenProject/pptn/settings.py
+- PopTenProject/pptn/urls.py
+- PopTenProject/pptn/wsgi.py
+- PopTenProject/searchres/templates/temp.html
+- PopTenProject/searchres/templates/noresults.html
+
+**Modified (original source see 'Source' below)**
+- PopTenProject/searchres/templates/results.html
+- PopTenProject/searchres/templates/index.html
+
 
 ## Contributions and Responsibilities
 **Shuyu Zhou**
@@ -78,11 +107,11 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - PopTenProject/searchres/util/analysis2.py
 - PopTenProject/searchres/util/googlemap.py
 - PopTenProject/searchres/util/scrape_twitter.py
+- PopTenProject/searchres/forms.py (modified)
 - PopTenProject/searchres/templates/temp.html
 - PopTenProject/searchres/templates/noresults.html
-- PopTenProject/searchres/templates/results.html
+- PopTenProject/searchres/templates/results.html (modified)
 - PopTenProject/searchres/templates/index.html (modified)
-- PopTenProject/searchres/forms.py (modified)
 
 **Ke Duan**
 - PopTenProject/searchres/admin.py
@@ -103,3 +132,4 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 
 ## Source
 - [freemiumdownload](http://freemiumdownload.com/demo?theme=bootstrap-coffee-pizza) - The web framework modified and used
+- [GoogleMapsAPI](https://developers.google.com/maps/documentation/javascript/examples/directions-simple) - The Directions API modified and used
