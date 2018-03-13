@@ -79,6 +79,7 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - /util/retrieve_list.py: same as above
 - /util/googlemap.py: Geocode a given address
 - /templates/results.html: Include a javascript that applies Google Map API to calculate directions between two locations
+
 **Datasets (should be) under PopTenProject/searchres/util**
 - business.json: raw Yelp dataset downloaded
 - twitter_data12.txt (or anyone you've scraped): Twitter dataset scraped
