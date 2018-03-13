@@ -4,7 +4,7 @@ import pandas as pd
 from itertools import combinations
 
 def find_list(strings):
-'''
+    '''
     Given a string, seperated by commas. Eg (Clown, Pickles, Burgers), 
     returns a tuple containing a dictionary of restaurants matching
     the categories presented in the input string, a list of the names
@@ -22,7 +22,7 @@ def find_list(strings):
         A list of keys: All keys from output_dict
         Exception_string: A string detailing any invalid inputs
         next_best: A string detailing the next best combination of inputs
-'''
+    '''
     strings = strings.title()
     categories = [word.strip() for word in strings.split(',')]
     with open('food.pickle', 'rb') as f:
