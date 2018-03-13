@@ -55,8 +55,8 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - **Step 1**: Once you open our website, you will be provided 3 search bars:
 - 'Food Type' allows you to enter a food type you want to search (e.g. 'pizza', 'burger', 'bars')
 - 'City' specifies the location of restaurants you want to search
-- 'Location' allows you to enter your current location 
-- Note: the 'Location' input doesn't have to be as detailed as a formatted address, but it needs to be more specific than 'City'
+- 'Address' allows you to enter your current location 
+- Note: the 'Address' input doesn't have to be as detailed as a formatted address, but it needs to be more specific than 'City'
 - **Step 2**: Hit the search button, and wait.
 - Note: It takes around 5 minutes or more to run the program (depending on your input and the size of twitter dataset)
 - **Step 3**: The results will be shown in a list, each with a drop-down menu and in a map
