@@ -5,6 +5,20 @@ import json
 import os
 
 def dict_assemble(save_format, constraint = False):
+'''
+    Given a save format, constructs either a CSV or a Dict preserved in a pickle
+    from information from business.json.
+    If constraint is set to a state in the form of a string,
+    only extracts restaurants with matching state IDs.
+    Each restaurant in the JSON is given a UID, then indexed
+    by food category in food_dict and indexed by UID in 
+    restaurant_dict.
+    Inputs:
+        save_format: Two accepted formats, "pickle" or "csv"
+        constraint: Default to False, otherwise set to a string.
+    Output:
+        CSV or Pickle containing a dictionary of restauraunts.
+'''
     script_dir = os.path.dirname(__file__)
     file_path = os.path.join(script_dir, './business.json')
     businesses_df = pd.read_json(file_path, lines = True, encoding = "utf-8")
