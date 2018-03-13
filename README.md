@@ -59,6 +59,7 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - Note: the 'Address' input doesn't have to be as detailed as a formatted address, but it needs to be more specific than 'City'
 - **Step 2**: Hit the search button, and wait.
 - Note: It takes around 5 minutes or more to run the program (depending on your input and the size of twitter dataset)
+- Note: Due to the limited version of Yelp dataset we are using, our search engine currently can't search for any restaurants located in New York City, Los Angelos or Chicago.
 - **Step 3**: The results will be shown in a list, each with a drop-down menu and in a map
 - Note: In the map, the start is your current location, and you can choose an end in the drop-down menu. You can also choose a travel mode. Then the map will show you the route.
 
