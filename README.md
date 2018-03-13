@@ -63,6 +63,13 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - **Step 3**: The results will be shown in a list, each with a drop-down menu and in a map
 - Note: In the map, the start is your current location, and you can choose an end in the drop-down menu. You can also choose a travel mode. Then the map will show you the route.
 
+## Run a Test
+** If you open our website correctly, you will be able to run the following test:**
+- (Use 'twitter_data12.txt')
+- Enter: Food Type: pizza; City: Las Vegas; Address: 3600 S Las Vegas Blvd, Las Vegas, NV 89109
+- Hit the search button and wait for about 5 mins
+- You will be provided a list of 8 restaurants ranked from the highest twitter score to the lowest, along with a map showing directions.
+
 ## Code Structure
 **Main funcions under PopTenProject/searchres**
 - main_algorithm.py: integrated function linked to front-end
