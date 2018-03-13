@@ -29,7 +29,7 @@ python manage.py runserver
 - django-form
 
 ### DIY: Scraping your own twitter dataset
-
+- Step 1: Open the terminal, change the directory to $PopTenProject/searchres/util/
 
 ## Contributions and Responsibilities
 **Shuyu Zhou**
