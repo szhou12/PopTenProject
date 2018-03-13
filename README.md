@@ -66,7 +66,7 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 ### Run a Test
 **If you open our website correctly, you will be able to run the following test:**
 - (Use 'twitter_data12.txt')
-- Enter: Food Type: pizza; City: Las Vegas; Address: 3600 S Las Vegas Blvd, Las Vegas, NV 89109
+- Enter: Food Type: **pizza**; City: **Las Vegas**; Address: **3600 S Las Vegas Blvd, Las Vegas, NV 89109**
 - Hit the search button and wait for about 5 mins
 - You will be provided a list of 8 restaurants ranked from the highest twitter score to the lowest, along with a map showing directions.
 
