@@ -52,9 +52,15 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - Note: Generally, we want as many keywords as possible (set cutoff as low as possible) to include every restaurant category/food type. But that will increase the time of scraping data. Therefore, mind that there is a tradeoff between shoretening the time of scraping and lowering the cutoff.
 
 ### PopTen Website Handbook
-- Step 1: Once you open our website, you will be provided 3 search bars:
+- **Step 1**: Once you open our website, you will be provided 3 search bars:
 - 'Food Type' allows you to enter a food type you want to search (e.g. 'pizza', 'burger', 'bars')
-- 'City' specifies 
+- 'City' specifies the location of restaurants you want to search
+- 'Location' allows you to enter your current location 
+- Note: the 'Location' input doesn't have to be as detailed as a formatted address, but it needs to be more specific than 'City'
+- **Step 2**: Hit the search button, and wait.
+- Note: It takes around 5 minutes or more to run the program (depending on your input and the size of twitter dataset)
+- **Step 3**: The results will be shown in a list, each with a drop-down menu and in a map
+- Note: In the map, the start is your current location, and you can choose an end in the drop-down menu. You can also choose a travel mode. Then the map will show you the route.
 
 ## Contributions and Responsibilities
 **Shuyu Zhou**
