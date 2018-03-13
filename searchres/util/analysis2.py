@@ -322,32 +322,3 @@ def analyze_df(obj_df):
     return ranking
            
 
-
-'''
-if __name__ == '__main__':
-
-    city = 'Phoenix'
-    food_type = 'pizza'
-    business_dataframe.dict_assemble("pickle")
-    
-    raw_tuple = retrieve_list.find_list(food_type)
-    
-    # get a list of names
-    raw_dict = raw_tuple[0]
-    raw_list = raw_tuple[1]
-    print()
-
-    
-    tweets_data_path = './twitter_data5.txt'
-    # example
-    #res_list = ['Lou Malnati\u2019s', 'Pablo Fransico','SLU']
-    res_dict, citylst = dict_converter(raw_dict, raw_list, city)
-    
-    df = read_data(tweets_data_path, res_dict, citylst)
-    print(df.rname.value_counts())
-    print()
-    rank = analyze_df(df)
-    
-    for i in rank:
-        print(i)
-''' 

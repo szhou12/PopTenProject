@@ -26,10 +26,3 @@ def get_geocode(address):
     
     return (loc_type, loc, formatted_address)
     
-'''
-if __name__ == '__main__':    
-    address = "Rockefeller center"
-    rv = get_geocode(address)
-    print('\n',rv)
-    
-'''
