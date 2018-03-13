@@ -10,7 +10,7 @@ from django.shortcuts import redirect
 # Create your views here.
 
 def temp(request):
-    #return render(request, 'home.html', locals())
+
     if request.method == 'POST':
         form = cuisineForm(request.POST)
         if form.is_valid():
@@ -20,7 +20,7 @@ def temp(request):
             if has_result:
                 return render(request, template, context)
             else:
-                template = 'noresults.html'#pending
+                template = 'noresults.html'
                 return render(request, template, context)
     else:
         form = cuisineForm()
