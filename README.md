@@ -66,9 +66,11 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 **Main funcions under PopTenProject/searchres**
 - main_algorithm.py: integrated function linked to front-end
 - /util/scrape_twitter.py: Twitter data scraper
-- /util/analysis2.py: combine information from both Yelp and twitter and conduct the analysis (See details in PopTenProject/Documents/
+- /util/analysis2.py: combine information from both Yelp and twitter and conduct the analysis (See details in PopTenProject/Documents/FinalPresenation.pptx 'Main Algorithm' part)
 - /util/business_dataframe.py: combine with retrieve_list.py to extract Yelp data filtered by food type 
 - /util/retrieve_list.py: same as above
+- /util/googlemap.py: Geocode a given address
+- /templates/results.html: Include a javascript that applies Google Map API to calculate directions between two locations
 
 ## Contributions and Responsibilities
 **Shuyu Zhou**
@@ -80,6 +82,7 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - PopTenProject/searchres/templates/noresults.html
 - PopTenProject/searchres/templates/results.html
 - PopTenProject/searchres/templates/index.html (modified)
+- PopTenProject/searchres/forms.py (modified)
 
 **Ke Duan**
 - PopTenProject/searchres/admin.py
