@@ -4,6 +4,25 @@ import pandas as pd
 from itertools import combinations
 
 def find_list(strings):
+'''
+    Given a string, seperated by commas. Eg (Clown, Pickles, Burgers), 
+    returns a tuple containing a dictionary of restaurants matching
+    the categories presented in the input string, a list of the names
+    of those restauraunts, an exception string detailing any inputs
+    that did not match any keys in food_dict, and the next_best string,
+    indicating the best combination of inputs minus one input.
+    
+    The function will ignore any input that is not found in food_dict
+   , it also returns the next best combination of inputs, if the current input
+   lacks sufficient variety or number of restaurants.
+    Inputs:
+        strings: A string of categories, seperated by commas.
+    Output:
+        output_dict: A dictionary containing each restaurant that matched the input categories
+        A list of keys: All keys from output_dict
+        Exception_string: A string detailing any invalid inputs
+        next_best: A string detailing the next best combination of inputs
+'''
     strings = strings.title()
     categories = [word.strip() for word in strings.split(',')]
     with open('food.pickle', 'rb') as f:
