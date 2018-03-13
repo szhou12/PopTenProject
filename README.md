@@ -94,4 +94,4 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - PopTenProject/searchres/util/retrieve_list.py
 
 ## Acknowledgements
-- [freemiumdownload](http://freemiumdownload.com/demo?theme=bootstrap-coffee-pizza) - The web framework used
+- [freemiumdownload](http://freemiumdownload.com/demo?theme=bootstrap-coffee-pizza) - The web framework modified and used
