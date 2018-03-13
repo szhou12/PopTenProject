@@ -133,3 +133,9 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 ## Source
 - [freemiumdownload](http://freemiumdownload.com/demo?theme=bootstrap-coffee-pizza) - The web framework modified and used
 - [GoogleMapsAPI](https://developers.google.com/maps/documentation/javascript/examples/directions-simple) - The Directions API modified and used
+
+
+## Contributors
+Shuyu Zhou,
+Ke Duan,
+Andrew Deng
