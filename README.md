@@ -29,6 +29,7 @@ python manage.py runserver
 - django-form
 
 ### DIY: Scraping your own twitter dataset
+**If you want to create your own twitter dataset rather than use the default one, you can follow the steps shown below:**
 - Step 1: Open the terminal, change the directory to $PopTenProject/searchres/util/
 - Step 2: Check if 'scrape_twitter.py' is in the /util folder
 - Step 3: Run the following command:
@@ -38,8 +39,17 @@ python scrape_twitter.py > [twitter_data filename]
 e.g. twitter_data12.txt (better save it as .txt file to avoid any conflicts that may arise)
 - Step 4: Wait for 2-3 hours to have a reasonably large dataset
 - Step 5: Check if your dataset is in /util folder
-- Step 6: If it is, change the directory to $PopTenProject/searchres/ and find main_algorithm.py
-- Step 7: Open main_algorithm.py and find 'TWEETS_PATH' and replace its assigned value wity your twitter_data filename
+- Step 6: If it is, change the directory to $PopTenProject/searchres/ and find 'main_algorithm.py'
+- Step 7: Open 'main_algorithm.py' in Python editor and find 'TWEETS_PATH' and replace its assigned value wity your twitter_data filename
+
+### DIY: Set up the cutoff for keywords
+**If you want to decide what keywords will be used to filter tweets, you can follow the steps shown below:**
+- Step 1: Go to $PopTenProject/searchres/util/
+- Step 2: Open 'scrape_twitter.py' in Python editor and find __main__
+- Step 3: find 'cutoff' variable and replace its assigned value with the one you want
+- Note: 'cutoff' decides what restaurant categories/food types in Yelp dataset are included into the keywords list for filtering tweets
+e.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Yelp dataset, then 'pizza' will be included into the keywords list for filtering tweets. 
+- Note: Generally, we want as many keywords as possible (set cutoff as low as possible) to include every restaurant category/food type. But that will increase the time of scraping data. Therefore, mind that there is a tradeoff between decreasing time of scraping and lowering the cutoff.
 
 ## Contributions and Responsibilities
 **Shuyu Zhou**
