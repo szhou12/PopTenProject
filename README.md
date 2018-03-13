@@ -28,6 +28,9 @@ python manage.py runserver
 - Django == 2.0.2
 - django-form
 
+### DIY: Scraping your own twitter dataset
+
+
 ## Contributions and Responsibilities
 **Shuyu Zhou**
 - PopTenProject/searchres/main_algorithm.py
