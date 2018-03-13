@@ -40,7 +40,7 @@ e.g. twitter_data12.txt (better save it as .txt file to avoid any conflicts that
 - Step 4: Wait for 2-3 hours to have a reasonably large dataset
 - Step 5: Check if your dataset is in /util folder
 - Step 6: If it is, change the directory to $PopTenProject/searchres/ and find 'main_algorithm.py'
-- Step 7: Open 'main_algorithm.py' in Python editor and find 'TWEETS_PATH' and replace its assigned value wity your twitter_data filename
+- Step 7: Open 'main_algorithm.py' in Python editor, find 'TWEETS_PATH' and replace its assigned value with your twitter_data filename
 
 ### DIY: Set up the cutoff for keywords
 **If you want to decide what keywords will be used to filter tweets, you can follow the steps shown below:**
@@ -50,6 +50,11 @@ e.g. twitter_data12.txt (better save it as .txt file to avoid any conflicts that
 - Note: 'cutoff' decides what restaurant categories/food types in Yelp dataset will be included into the keywords list for filtering tweets.
 E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Yelp dataset, then 'pizza' will be included into the keywords list for filtering tweets. 
 - Note: Generally, we want as many keywords as possible (set cutoff as low as possible) to include every restaurant category/food type. But that will increase the time of scraping data. Therefore, mind that there is a tradeoff between shoretening the time of scraping and lowering the cutoff.
+
+### PopTen Website Handbook
+- Step 1: Once you open our website, you will be provided 3 search bars:
+- 'Food Type' allows you to enter a food type you want to search (e.g. 'pizza', 'burger', 'bars')
+- 'City' specifies 
 
 ## Contributions and Responsibilities
 **Shuyu Zhou**
