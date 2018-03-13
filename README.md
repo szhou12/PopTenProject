@@ -63,7 +63,12 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - Note: In the map, the start is your current location, and you can choose an end in the drop-down menu. You can also choose a travel mode. Then the map will show you the route.
 
 ## Code Structure
-
+**Main funcions under PopTenProject/searchres**
+- main_algorithm.py: integrated function linked to front-end
+- /util/scrape_twitter.py: Twitter data scraper
+- /util/analysis2.py: combine information from both Yelp and twitter and conduct the analysis (See details in PopTenProject/Documents/
+- /util/business_dataframe.py: combine with retrieve_list.py to extract Yelp data filtered by food type 
+- /util/retrieve_list.py: same as above
 
 ## Contributions and Responsibilities
 **Shuyu Zhou**
@@ -93,5 +98,5 @@ E.g. if cutoff = 300, and 'pizza' is a category that appears over 300 times in Y
 - PopTenProject/searchres/util/business_dataframe.py
 - PopTenProject/searchres/util/retrieve_list.py
 
-## Acknowledgements
+## Source
 - [freemiumdownload](http://freemiumdownload.com/demo?theme=bootstrap-coffee-pizza) - The web framework modified and used
