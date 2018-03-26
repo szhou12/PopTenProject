@@ -23,7 +23,7 @@ The goal of our project is to collect data from the social media Twitter, in ord
 ```
 python manage.py runserver
 ```
-- Step 5: Wait util it shows a web address (e.g. http://127.0.0.1:8000/)
+- Step 5: Wait until it shows a web address (e.g. http://127.0.0.1:8000/)
 - Step 6: Copy and paste this address to your web browser
 - Step 7: Add 'poptenrestuarant' at the end to make it look as http://127.0.0.1:8000/poptenrestuarant/
 - Step 8: You have our website ready to go!
