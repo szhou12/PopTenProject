@@ -5,6 +5,9 @@ The goal of our project is to collect data from the social media Twitter, in ord
 
 ## Media
 ![popten0](https://user-images.githubusercontent.com/35708194/38706607-65f2b420-3e73-11e8-92c7-6da60ad1478f.png)
+![popten](https://user-images.githubusercontent.com/35708194/38706659-9543949c-3e73-11e8-9ebf-60c29ae43a0e.png)
+![popten1](https://user-images.githubusercontent.com/35708194/38706661-976747dc-3e73-11e8-87f3-00c169c34046.png)
+![popten2](https://user-images.githubusercontent.com/35708194/38706662-98dcbb7e-3e73-11e8-8ad7-c2942c6e7952.png)
 
 ## Getting Started
 ### Installation
