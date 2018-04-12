@@ -3,6 +3,9 @@
 ## Synopsis
 The goal of our project is to collect data from the social media Twitter, in order to interpret this information to predict the trends of restaurants within a specific location.  We foresee the creation of a website from which we will be able to provide users the ability to select from search criteria, including location and food type, and be returned information on restaurants that have been popular among twitter users in the area in order to provide useful suggestions and directions to those restaurants.
 
+## Media
+![popten0](https://user-images.githubusercontent.com/35708194/38706607-65f2b420-3e73-11e8-92c7-6da60ad1478f.png)
+
 ## Getting Started
 ### Installation
 **Python packages required:**
